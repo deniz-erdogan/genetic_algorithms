@@ -8,6 +8,7 @@ pygame.init()
 WHITE = (255,255,255)
 BLACK = (0,0,0)
 
+#This is with obstacles
 
 FPS = 120
 population = Population(100)
