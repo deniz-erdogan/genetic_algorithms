@@ -12,7 +12,7 @@ RADIUS = 10
 
 class Ball:
 	def __init__(self):
-		self.genes = Genes(1000)
+		self.genes = Genes(2000)
 		self.pos = myvector(70, HEIGHT/2)
 		self.vel = myvector(0, 0)
 		self.acc = myvector(0, 0)
@@ -47,7 +47,7 @@ class Ball:
 	def update(self):
 		if (not self.reached_goal) and (not self.dead):
 			self.move()
-		if not self.is_inside():
+		if not self.is_inside() or (self.pos.x < 520 and self.pos.x > 500 and self.pos.y > 400) or (self.pos.x > 1000 and self.pos.x <1020 and self.pos.y < 600):
 			self.dead = True
 		elif self.calculateDistancetoGoal() < 10:
 			self.reached_goal = True
