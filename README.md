@@ -15,5 +15,5 @@ In my case, the ones with higher fitness values are most likely (but not certain
 
 In about 50 generations, they were able to overcome the obstacles I have put in their way.
 
-![Generation 14](gen14.png)
-![Generation 78](gen78.png)
+![Generation 14](images/gen14.png)
+![Generation 78](images/gen78.png)
